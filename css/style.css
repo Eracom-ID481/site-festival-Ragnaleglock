@@ -1,3 +1,43 @@
+#top {
+	height: 100vh;
+}
+
+#top .galerie {
+	height: 90%;
+	background-color: orange;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#top .galerie .item {
+	position: relative;
+}
+
+#top .galerie .item h1 {
+	position: absolute;
+	top: 2rem;
+	left: 0;
+  	right: 0;
+  	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+	font-size: 5rem;
+	color: white;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#top .galerie .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#top .liens {
+	height: 10%;
+	background-color: gray;
+}
 /* Style des filtres de la grille horraire */
 #jours {
   padding: 1rem;
@@ -11,4 +51,9 @@
 #jours ul li:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+
+ul li {
+	font-family: helvetica;
 }
