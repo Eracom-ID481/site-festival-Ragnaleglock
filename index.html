@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/vendor/timetablejs.css" />
     <link rel="stylesheet" href="css/style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Staatliches&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300&display=swap" rel="stylesheet">
+
     <script src="js/vendor/timetable.js" async defer></script>
     <script src="js/app.js" async defer></script>
   </head>
@@ -21,33 +27,55 @@
 	  <section id="top">
 		  <div class="galerie">
 			  <div class="item">
-				  <img src="images/CONCERTS.png">
-				  <h1>Truc 1</h1>
+				  <img src="images/concertSCH.png">
+				  <a href="concerts.html">
+					<h1>CONCERTS</h1>
+				  </a>
+
 			  </div>
 			  <div class="item">
-				  <img src="images/EXPOSITION.png">
-				  <h1>Truc 2</h1>
+				  <img src="images/sneakers.png">
+				  <a href="expositions.html">
+				  <h1>EXPOSITIONS</h1>
+			  </a>
 			  </div>
 			  <div class="item">
-				  <img src="images/PERFORMANCE.png">
-				  <h1>Truc 3</h1>
+				  <img src="images/dance.png">
+				  <a href="performances.html">
+				  <h1>PERFORMANCES</h1>
+				  </a>
 			  </div>
 		  </div>
 		  <div class="liens">
-			  <a href="#">
-				  Programme
+			  <a id="programme" href="#">
+				  PROGRAMME
 			  </a>
-			  <a href="#">
-				  Billeterie
+			  <a id="billetterie" href="billeterie.html">
+				  BILLETTERIE
 			  </a>
 		  </div>
+
+		  <div class="texte">
+
+			  <h4> plongez dans l'univers urbain</h4>
+			  <div class="imagehead">
+
+			  <img src="images/foule.jpg" alt="">
+ </div>
+		  </div>
+
+		  <div class="texte2">
+		  	<h4> L'UrbanStreet Festival accueille chaque année plus de 30 artistes francophones les plus réputés.</h4>
+		  </div>
+
+		  <button class="ticket-button"> Acheter les billets </button>
 	  </section>
     <div id="jours">
       <ul>
         <!-- La classe définissant le jour doit toujours être en deuxième position -->
-        <li class="filter vendredi active">Vendredi</li>
-        <li class="filter samedi">Samedi</li>
-        <li class="filter dimanche">Dimanche</li>
+        <li class="filter jeudi active">JEUDI 17 JUILLET</li>
+        <li class="filter vendredi">VENDREDI 18 JUILLET</li>
+        <li class="filter samedi">SAMEDI 19 JUILLET</li>
       </ul>
     </div>
     <div id="timetable" class="timetable"></div>

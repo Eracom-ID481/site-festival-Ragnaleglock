@@ -18,16 +18,17 @@ function drawTimetable(day) {
 
     // On dessine une nouvelle grille selon le jour.
     // Utilisez le nom de classe attribuée à chaque jour pour donner la condition
-    if (day == "vendredi") {
+    if (day == "jeudi") {
         // Définir les heures de la grille (heure de début, heure de fin).
         timetable.setScope(10, 00);
 
         // Définir les lieux de la grille.
         timetable.addLocations([
-            "Le Romandie",
-            "El Lokal",
-            "Bad Bonn",
+            "2pacArena",
+            "Jordan palace",
+            "MC",
             "Rote Fabrik",
+
         ]);
 
         // Premier événement:
@@ -36,7 +37,7 @@ function drawTimetable(day) {
             // Artiste
             "Purple Mountains",
             // Lieu
-            "El Lokal",
+            "2pacArena",
 
 
             // Date et heure de début (année, mois, jour, heure, minute)
@@ -53,7 +54,7 @@ function drawTimetable(day) {
             // Artiste
             "zer",
             // Lieu
-            "El Lokal",
+            "Jordan palace",
 
 
             // Date et heure de début (année, mois, jour, heure, minute)
@@ -70,7 +71,7 @@ function drawTimetable(day) {
         // Deuxième événement
         timetable.addEvent(
             "Bruce Springsteen",
-            "Bad Bonn",
+            "MC",
             new Date(2020, 10, 17, 13, 00),
             new Date(2020, 10, 17, 15, 45), {
                 url: "../artiste.html"
@@ -81,7 +82,7 @@ function drawTimetable(day) {
         renderer.draw(".timetable");
     }
     // Deuxième jour
-    else if (day == "samedi") {
+    else if (day == "vendredi") {
         timetable.setScope(10, 00);
         timetable.addLocations(["Les Docks", "Le Bourg", "PTR", "Fri-Son"]);
 
@@ -106,7 +107,7 @@ function drawTimetable(day) {
         renderer.draw(".timetable");
     }
     // Troisième jour
-    else if (day == "dimanche") {
+    else if (day == "samedi") {
         timetable.setScope(10, 00);
         timetable.addLocations(["Les Docks", "Le Bourg", "PTR", "Fri-Son"]);
         timetable.addEvent(

@@ -1,59 +1,259 @@
 #top {
-	height: 100vh;
+    height: 100vh;
 }
 
 #top .galerie {
-	height: 90%;
-	background-color: orange;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+    height: 90%;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #top .galerie .item {
-	position: relative;
+    position: relative;
 }
 
 #top .galerie .item h1 {
-	position: absolute;
-	top: 2rem;
-	left: 0;
-  	right: 0;
-  	margin-left: auto;
-  	margin-right: auto;
-	text-align: center;
-	font-size: 5rem;
-	color: white;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	font-weight: bolder;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Staatliches', cursive;
 }
 
 #top .galerie .item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#top .liens {
-	height: 10%;
-	background-color: gray;
+#top .item h1 {
+    margin-top: 50%;
 }
+
 /* Style des filtres de la grille horraire */
 #jours {
-  padding: 1rem;
+    padding: 1rem;
 }
+
 #jours ul {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 #jours ul li.active,
 #jours ul li:hover {
-  cursor: pointer;
-  text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-
 ul li {
-	font-family: helvetica;
+    font-family: helvetica;
+}
+
+.liens {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.liens a {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: em;
+    margin-bottom: 4em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+.liens {
+    background-color: orange;
+}
+
+body {
+    background-color: #181818;
+}
+
+.Liste {
+    background-color: orange;
+    font-size: 4rem;
+    font-family: 'Staatliches', cursive;
+    display: grid;
+    place-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#programme2 {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 15%;
+    margin-bottom: 4em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+#retour {
+    font-size: 2rem;
+    place-items: left;
+}
+
+.Liste p {
+    font-size: 2rem;
+}
+
+/* Restyle tableau */
+.timetable>section>header {
+    background-color: transparent;
+    color: white;
+}
+
+.timetable>section>header li .time-label {
+    font-family: 'Staatliches';
+}
+
+#jours {
+    font-size: 20px;
+    font-family: 'Staatliches'cursive;
+    color: white;
+    padding-top: 10%;
+    text-decoration: none;
+    margin-top: 1300px;
+}
+
+#jours li {
+    font-family: 'Staatliches';
+}
+
+#timetable li {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.timetable>aside:before {
+    background-color: transparent;
+}
+
+h3 {
+    font-size: 45px;
+    font-family: 'Staatliches';
+    color: white;
+    text-align: center;
+}
+
+.ticket1 {
+    margin-top: 290px;
+    text-align: center;
+}
+
+.ticket2 {
+    margin-top: 290px;
+    text-align: center;
+}
+
+.ticket3 {
+    margin-top: 290px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 70px;
+    font-family: 'Staatliches';
+    color: white;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: orange;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+    color: white
+}
+
+h3 {
+    margin-top: 100px;
+    font-size: 90px;
+}
+
+#tickets {
+    width: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.headbilletterie {
+    background-color: #303030;
+    padding: 50px;
+}
+
+.ticket1 {
+    background-color: #787878;
+    padding-bottom: 40px;
+}
+
+.ticket2 {
+    background-color: #787878;
+    padding-bottom: 40px;
+}
+
+.ticket3 {
+    background-color: #787878;
+    padding-bottom: 40px;
+}
+
+#bodybillet {
+    background-image: url(images/dance.png);
+}
+
+button {
+    margin-top: 40px;
+    font-family: 'Staatliches';
+    width: 200px;
+    height: 130px;
+    font-size: 50px;
+    background-color: orange;
+    color: white;
+}
+
+.ticket-button {
+	margin: 0 auto;
+    display: block;
+    width: auto;
+}
+
+.texte h4 {
+    font-family: 'Staatliches';
+    color: white;
+    margin-top: 180px;
+    font-size: 110px;
+}
+
+.imagehead {
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+}
+
+.texte2 h4 {
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Staatliches';
+    font-size: 40px;
+    color: white;
 }
