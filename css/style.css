@@ -1,5 +1,5 @@
 #top {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #top .galerie {
@@ -27,6 +27,7 @@
     text-transform: uppercase;
     font-weight: bolder;
     font-family: 'Staatliches', cursive;
+	overflow: hidden;
 }
 
 #top .galerie .item img {
@@ -128,7 +129,6 @@ body {
     color: white;
     padding-top: 10%;
     text-decoration: none;
-    margin-top: 1300px;
 }
 
 #jours li {
@@ -136,7 +136,7 @@ body {
 }
 
 #timetable li {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 .timetable>aside:before {
@@ -170,8 +170,6 @@ h2 {
     font-family: 'Staatliches';
     color: white;
     padding: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
     background-color: orange;
 }
 
@@ -187,7 +185,6 @@ p {
 }
 
 h3 {
-    margin-top: 100px;
     font-size: 90px;
 }
 
@@ -202,18 +199,29 @@ h3 {
     padding: 50px;
 }
 
+.ticket-container {
+	display: flex;
+}
+
+.ticket-container img {
+	max-width: 75%;
+}
+
 .ticket1 {
     background-color: #787878;
+	margin: 2rem;
     padding-bottom: 40px;
 }
 
 .ticket2 {
     background-color: #787878;
+	margin: 2rem;
     padding-bottom: 40px;
 }
 
 .ticket3 {
     background-color: #787878;
+	margin: 2rem;
     padding-bottom: 40px;
 }
 
@@ -225,14 +233,15 @@ button {
     margin-top: 40px;
     font-family: 'Staatliches';
     width: 200px;
-    height: 130px;
-    font-size: 50px;
     background-color: orange;
     color: white;
+	border-radius: 30px;
+	padding: 1rem;
+	font-size: 1.50rem;
 }
 
 .ticket-button {
-	margin: 0 auto;
+    margin: 0 auto;
     display: block;
     width: auto;
 }
@@ -250,10 +259,64 @@ button {
     margin-top: 70px;
 }
 
+.imagehead img {
+	max-width: 100%;
+}
+
 .texte2 h4 {
     text-align: center;
     margin-top: 5%;
     font-family: 'Staatliches';
     font-size: 40px;
     color: white;
+    padding: 50px;
+}
+
+.timetable ul.room-timeline li:before {
+    background-color: black;
+}
+
+.timetable .time-entry {
+    background-color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+	#top {
+		height: auto;
+	}
+    #top .galerie  {
+        grid-template-columns: 1fr;
+    }
+
+	#top .galerie .item {
+		max-height: 30vh;
+	}
+
+	#top .item h1 {
+		margin-top: 0;
+	}
+
+	#top .galerie .item h1  {
+		top: calc(50% - 2.5rem)
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	.ticket-container {
+		display: block;
+	}
+}
+
+.contact {
+
+	margin: 50px;
+
+}
+
+.contact h4 {
+
+	font-family: "Staatliches";
+	font-size: 1.5rem;
+	color: white;
+	
 }
